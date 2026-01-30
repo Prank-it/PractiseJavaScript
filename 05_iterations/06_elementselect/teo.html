@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CHAI AUR CODE</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+    const alldivs = document.querySelector(".parent");
+  //  console.log(alldivs.children[0].innerHTML);
+   // for(let i = 0 ; i < alldivs.children.length ; i++){
+     //   console.log(alldivs.children[i].textContent);
+    //}
+    //console.log(alldivs.firstElementChild.textContent);
+    //console.log(alldivs.lastElementChild.textContent);
+    const child = document.querySelector(".day");
+    console.log(child);
+    console.log(child.parentElement)
+    console.log(child.nextElementSibling);
+    console.log(child.nextElementSibling.nextElementSibling);
+    console.log(child.previousElementSibling);  
+</script>
+</html>
