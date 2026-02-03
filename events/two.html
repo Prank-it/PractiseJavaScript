@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <h1>ht chutiye</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const namePrint = function(){
+        console.log("Hello, world!");
+    }
+    const changeText  = function(){
+        document.querySelector("h1").innerHTML = "chai aur code ";
+    }
+    const changeMe = setTimeout(changeText, 3000);
+    document.querySelector("#stop").addEventListener("click",function (){
+        clearTimeout(changeMe);
+        console.log("stop");
+    })
+</script>
+</html>
